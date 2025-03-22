@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useEffect, useRef, FC } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "../HoverLinks";
 import { gsap } from "gsap";
-import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+// @ts-ignore
+import { ScrollSmoother } from "../../lib/gsap/ScrollSmoother.min.js";
 import "./Navbar.css";
 
 // Register GSAP plugins

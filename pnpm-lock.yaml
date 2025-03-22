@@ -35,9 +35,6 @@ importers:
       gsap:
         specifier: ^3.12.7
         version: 3.12.7
-      gsap-trial:
-        specifier: ^3.12.7
-        version: 3.12.7
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -795,9 +792,6 @@ packages:
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
-
-  gsap-trial@3.12.7:
-    resolution: {integrity: sha512-VR6064JQ4RM2pUll+qBB7mgNtTkKGBSPRSNRIibYU66ZA9fEFkUIWhAb37/h1oGVu1HxPYLqsxFUOaL7PQVJ1w==}
 
   gsap@3.12.7:
     resolution: {integrity: sha512-V4GsyVamhmKefvcAKaoy0h6si0xX7ogwBoBSs2CTJwt7luW0oZzC0LhdkyuKV8PJAXr7Yaj8pMjCKD4GJ+eEMg==}
@@ -2041,8 +2035,6 @@ snapshots:
   glsl-noise@0.0.0: {}
 
   graphemer@1.4.0: {}
-
-  gsap-trial@3.12.7: {}
 
   gsap@3.12.7: {}
 

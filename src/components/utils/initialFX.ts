@@ -1,4 +1,6 @@
-import { SplitText } from "gsap-trial/SplitText";
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-ignore
+import { SplitText } from "../../lib/gsap/SplitText.min.js";
 import gsap from "gsap";
 import { smoother } from "../Navbar/Navbar";
 
