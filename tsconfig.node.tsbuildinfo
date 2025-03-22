@@ -1,0 +1,6 @@
+{
+	"root": [
+		"./rsbuild.config.ts"
+	],
+	"version": "5.8.2"
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tinspham.dev
+
+# Sitemaps
+Sitemap: https://tinspham.dev/sitemap.xml
