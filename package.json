@@ -6,6 +6,8 @@
 	"scripts": {
 		"dev": "rsbuild dev",
 		"build": "rsbuild build",
+		"dev:rsdoctor": "RSDOCTOR=true rsbuild dev",
+		"build:rsdoctor": "RSDOCTOR=true rsbuild build",
 		"lint": "eslint .",
 		"preview": "rsbuild preview"
 	},
@@ -31,6 +33,7 @@
 		"@rsbuild/core": "^1.2.19",
 		"@rsbuild/plugin-react": "^1.1.1",
 		"@rsbuild/plugin-type-check": "^1.2.1",
+		"@rsdoctor/rspack-plugin": "^1.0.0",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
 		"eslint": "^9.9.0",
