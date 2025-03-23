@@ -33,7 +33,7 @@ const SocialIcons: FC = () => {
 			>
 				<HoverLinks text="RESUME" />
 				<span>
-					<TbNotes />
+					<TbNotes data-testid="resume-icon" />
 				</span>
 			</a>
 		</div>

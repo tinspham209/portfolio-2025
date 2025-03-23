@@ -48,7 +48,9 @@ const Cursor = () => {
 		});
 	}, []);
 
-	return <div className="cursor-main" ref={cursorRef}></div>;
+	return (
+		<div className="cursor-main" ref={cursorRef} data-testid="cursor"></div>
+	);
 };
 
 export default Cursor;

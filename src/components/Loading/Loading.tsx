@@ -53,11 +53,11 @@ const Loading = ({ percent }: { percent: number }) => {
 						height={50}
 					/>
 				</a>
-				<div className={`loaderGame ${clicked && "loader-out"}`}>
+				<div className={`loaderGame ${clicked && "loader-out"}`} data-testid="loader-game">
 					<div className="loaderGame-container">
 						<div className="loaderGame-in">
 							{[...Array(27)].map((_, index) => (
-								<div className="loaderGame-line" key={index}></div>
+								<div className="loaderGame-line" data-testid="loader-line" key={index}></div>
 							))}
 						</div>
 						<div className="loaderGame-ball"></div>
@@ -74,9 +74,13 @@ const Loading = ({ percent }: { percent: number }) => {
 				<div
 					className={`loading-wrap ${clicked && "loading-clicked"}`}
 					onMouseMove={(e) => handleMouseMove(e)}
+					data-testid="loading-wrap"
 				>
 					<div className="loading-hover"></div>
-					<div className={`loading-button ${loaded && "loading-complete"}`}>
+					<div
+						className={`loading-button ${loaded && "loading-complete"}`}
+						data-testid="loading-button"
+					>
 						<div className="loading-container">
 							<div className="loading-content">
 								<div className="loading-content-in">

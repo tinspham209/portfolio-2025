@@ -61,7 +61,9 @@ const Navbar: FC = () => {
 		e.preventDefault();
 		const target = e.currentTarget as HTMLAnchorElement;
 		const section = target.getAttribute("data-href");
-		smoother.scrollTo(section, true, "top top");
+		if (section) {
+			smoother.scrollTo(section, true, "top top");
+		}
 	};
 
 	// Initialize scroll smoother and event listeners
@@ -71,9 +73,11 @@ const Navbar: FC = () => {
 		smoother.scrollTop(0);
 		smoother.paused(true);
 
+		const header = headerRef.current;
+
 		// Add click event listeners to navigation links
-		if (headerRef.current) {
-			const links = headerRef.current.querySelectorAll("ul a");
+		if (header) {
+			const links = header.querySelectorAll("ul a");
 			links.forEach((link) => {
 				link.addEventListener("click", handleNavClick as EventListener);
 			});
@@ -87,8 +91,8 @@ const Navbar: FC = () => {
 
 		// Cleanup event listeners
 		return () => {
-			if (headerRef.current) {
-				const links = headerRef.current.querySelectorAll("ul a");
+			if (header) {
+				const links = header.querySelectorAll("ul a");
 				links.forEach((link) => {
 					link.removeEventListener("click", handleNavClick as EventListener);
 				});
