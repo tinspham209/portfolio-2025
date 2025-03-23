@@ -40,7 +40,7 @@ const careerData: CareerItem[] = [
 		company: "DataHouse",
 		companyUrl: "https://www.datahouse.com/",
 		year: "NOW",
-		description: `Front-end Developer focused on Front-end architecture design, and development. Responsibilities include requirements analysis, UI implementation, code quality assurance, team management, and training/mentoring.`,
+		description: `Focused on Front-end architecture design, and development. Responsibilities include requirements analysis, UI implementation, code quality assurance, team management, and training/mentoring.`,
 	},
 ];
 

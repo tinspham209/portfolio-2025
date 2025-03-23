@@ -5,7 +5,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "rsbuild dev",
-		"build": "rsbuild build",
+		"build-app": "rsbuild build",
+		"build-sw": "workbox generateSW workbox-config.cjs",
+		"build": "pnpm run build-app && pnpm run build-sw",
 		"dev:rsdoctor": "RSDOCTOR=true rsbuild dev",
 		"build:rsdoctor": "RSDOCTOR=true rsbuild build",
 		"lint": "eslint .",
@@ -22,15 +24,15 @@
 		"@react-three/fiber": "^8.17.10",
 		"@react-three/postprocessing": "^2.16.3",
 		"@react-three/rapier": "^1.5.0",
-		"@types/three": "^0.168.0",
-		"@vercel/analytics": "^1.4.1",
 		"gsap": "^3.12.7",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
 		"react-fast-marquee": "^1.6.5",
 		"react-icons": "^5.3.0",
 		"three": "^0.168.0",
-		"three-stdlib": "^2.33.0"
+		"three-stdlib": "^2.33.0",
+		"workbox-cli": "7.3.0",
+		"workbox-window": "7.3.0"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.9.0",
@@ -45,6 +47,7 @@
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
 		"@types/testing-library__jest-dom": "^6.0.0",
+		"@types/three": "^0.168.0",
 		"eslint": "^9.9.0",
 		"eslint-plugin-react-hooks": "^5.1.0-rc.0",
 		"eslint-plugin-react-refresh": "^0.4.9",
