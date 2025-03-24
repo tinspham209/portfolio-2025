@@ -41,7 +41,7 @@ export const projects: Project[] = [
 		id: "anhung",
 		title: "Công ty xây dựng An Hưng",
 		category: "Web",
-		tools: ["Next.js 13", "shadnui", "SEO"],
+		tools: ["Next.js 13", "Sanity.io", "shadnui", "SEO"],
 		image: "/projects/anhung.webp",
 	},
 	{
