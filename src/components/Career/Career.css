@@ -74,6 +74,22 @@
 	margin: 10px 0px;
 	color: var(--accentColor);
 }
+
+.career-content-flex {
+	margin-top: 8px;
+	display: flex;
+	gap: 4px;
+	flex-wrap: wrap;
+}
+.career-tags {
+	font-size: 13px;
+	font-weight: 400;
+	padding: 2px 7px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px solid #ffffff50;
+	border-radius: 30px;
+}
+
 .career-timeline {
 	position: absolute;
 	top: -50px;
@@ -157,6 +173,10 @@
 	.career-info-box p {
 		width: 45%;
 	}
+
+	.career-tags {
+		font-size: 12px;
+	}
 }
 @media only screen and (max-width: 1025px) {
 	.career-section {
@@ -183,6 +203,9 @@
 	}
 	.career-container {
 		width: calc(100% - 25px);
+	}
+	.career-tags {
+		font-size: 11px;
 	}
 }
 @media only screen and (max-width: 600px) {

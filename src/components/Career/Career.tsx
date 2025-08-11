@@ -7,6 +7,7 @@ interface CareerItem {
 	companyUrl?: string;
 	year: string;
 	description: string;
+	tags?: string[];
 }
 
 // Function to calculate years from a given date until now
@@ -20,12 +21,21 @@ const calculateYearsFromDate = (startDate: string): number => {
 
 const careerData: CareerItem[] = [
 	{
+		position: "Co-Founder",
+		company: "NOOR",
+		companyUrl: "https://noor-cf.web.app/about",
+		year: "2019",
+		description: `Part of the founding team of NOOR, a Vietnamese startup focused on creating high-quality, healthy beverages.`,
+		tags: ["NOOR Coffee & Tea", "NOOR Kombucha", "NOOR Light", "NOOR Studio"],
+	},
+	{
 		position: "Freelancer Web Developer",
 		company: "My home",
 		year: "2020",
 		description: `I've been working as a freelancer for the past ${calculateYearsFromDate(
 			"August 2020"
 		)} years, and have been improving my skills since.`,
+		tags: ["React", "Next.js", "WordPress", "Sanity CMS", "SEO"],
 	},
 	{
 		position: "Software Engineer Intern",
@@ -34,13 +44,41 @@ const careerData: CareerItem[] = [
 		year: "2021",
 		description:
 			"I participated in the Summer Software Engineer internship at DataHouse Asia as a Frontend Web Developer.",
+		tags: ["JavaScript", "TypeScript", "React", "React Native", "Angular"],
 	},
 	{
 		position: "Software Engineer",
 		company: "DataHouse",
 		companyUrl: "https://www.datahouse.com/",
-		year: "NOW",
+		year: "2025",
 		description: `Focused on Front-end architecture design, and development. Responsibilities include requirements analysis, UI implementation, code quality assurance, team management, and training/mentoring.`,
+		tags: [
+			"JavaScript",
+			"TypeScript",
+			"React",
+			"Angular",
+			"Storybook",
+			"UI libraries",
+			"Lerna Monorepos",
+			"Micro-frontends",
+		],
+	},
+	{
+		position: "Full-Stack Developer",
+		company: "ONE Tech Stop Viet Nam",
+		companyUrl: "http://ots.one-line.com/",
+		year: "NOW",
+		description: `Participate in the Design System team. Focused on building reusable React components and libraries for over 40 company's internal teams.`,
+		tags: [
+			"JavaScript",
+			"TypeScript",
+			"React",
+			"Next.js",
+			"Storybook",
+			"Design System",
+			"UI libraries",
+			"Turborepo",
+		],
 	},
 ];
 
@@ -50,6 +88,7 @@ const CareerItem: FC<CareerItem> = ({
 	companyUrl,
 	year,
 	description,
+	tags,
 }) => {
 	return (
 		<div className="career-info-box">
@@ -68,7 +107,18 @@ const CareerItem: FC<CareerItem> = ({
 				</div>
 				<h3>{year}</h3>
 			</div>
-			<p>{description}</p>
+			<p>
+				{description}
+				{tags && tags.length > 0 && (
+					<span className="career-content-flex">
+						{tags?.map((tag, i) => (
+							<span key={i} className="career-tags">
+								{tag}
+							</span>
+						))}
+					</span>
+				)}
+			</p>
 		</div>
 	);
 };
@@ -94,6 +144,7 @@ const Career: FC = () => {
 							companyUrl={item.companyUrl}
 							year={item.year}
 							description={item.description}
+							tags={item.tags}
 						/>
 					))}
 				</div>

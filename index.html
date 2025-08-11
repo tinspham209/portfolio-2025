@@ -13,10 +13,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="theme-color" content="#fff" />
-
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="Tin Pham, Tins Pham, portfolio, software engineer, front-end developer, React, Next.js, TypeScript, Vietnam, web developer, UI, Danang" />
+		<meta name="language" content="en" />
+		
 		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
+		<link rel="canonical" href="https://tinspham.dev/" />
+		
 		<meta name="author" content="tinspham209" />
 		<title>Tins Pham Portfolio</title>
 		<meta name="description" content="Tins Pham's homepage" />
@@ -27,12 +31,15 @@
 		<meta property="og:site_name" content="Tins Pham Portfolio" />
 		<meta property="og:description" content="Tins Pham's homepage" />
 		<meta property="og:image" content="/opengraph-image.png" />
+		<meta property="og:image:alt" content="Tins Pham Portfolio - Software Engineer based in Danang, Vietnam" />
 
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content="https://tinspham.dev" />
 		<meta property="twitter:title" content="Tins Pham Portfolio" />
 		<meta property="twitter:description" content="Tins Pham's homepage" />
 		<meta property="twitter:image" content="/opengraph-image.png" />
+		<meta property="twitter:image:alt" content="Tins Pham Portfolio - Software Engineer based in Danang, Vietnam" />
+		
 		<style>
 			.visually-hidden {
 				clip: rect(0 0 0 0);
@@ -49,26 +56,55 @@
 			defer
 			src="https://cloud.umami.is/script.js" data-website-id="5aecfd50-0867-4f09-b601-227fc16031ce"
 		></script>
+
+		<!-- Structured Data: Person -->
+		<script type="application/ld+json" defer>
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Person",
+		  "name": "Tin Pham",
+		  "alternateName": "tinspham209",
+		  "url": "https://tinspham.dev",
+		  "image": "https://tinspham.dev/opengraph-image.png",
+		  "jobTitle": "Software Engineer, Front-end Developer",
+		  "worksFor": {
+				"@type": "Organization",
+				"name": "ONE Tech Stop Viet Nam"
+		  },
+		  "sameAs": [
+				"https://github.com/tinspham209",
+				"https://www.linkedin.com/in/phamvantins/",
+				"https://www.instagram.com/phamthitins"
+		  ],
+		  "address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Da Nang",
+				"addressCountry": "Vietnam"
+		  },
+		  "email": "mailto:tinphamvan123@gmail.com",
+		  "description": "Tin Pham's homepage and portfolio. Software Engineer based in Danang, Vietnam."
+		}
+		</script>
 	</head>
 
 	<body>
 		<div id="root"></div>
 		<div class="visually-hidden">
-			<h1>Tin Pham</h>
+			<h2>Tin Pham</h2>
 			<h3>@tinspham209</h3>
-			<p>Tins Pham portfolio</p>
+			<h1>Tins Pham portfolio</h1>
 
-			<section id="resume">
+			<article id="resume">
 				<h3>Resume</h3>
 				<a href="/cv.pdf">My CV</a>	
-			</section>
+			</article>
 
-			<section id="introduction">
+			<article id="introduction">
 				<h3>About</h3>
 				<p>Hello! I'm Tin, a software engineer based in Danang, Vietnam.</p>
 				<p>A Software Engineer, Front-end Developer</p>
-			</section>
-			<section id="about-me">
+			</article>
+			<article id="about-me">
 				<h3>About Me</h3>
 				<p>
 					A Software Engineering, interested in designing websites, especially
@@ -76,8 +112,8 @@
 					inovate software development roles while further advancing my
 					technical expertise.
 				</p>
-			</section>
-			<section id="what-i-do"">
+			</article>
+			<article id="what-i-do"">
 				<h3>What I Do</h3>
 				<section id="what-i-do__developer">
 					<h4>Developer</h4>
@@ -108,30 +144,87 @@
 						<li>Adobe Premiere</li>
 					</ul>
 				</section>
-			</section>
+			</article>
 			<section id="my-career-experience">
 				<h3>My career & experience</h3>
+				<section id="my-career-experience__co-founder">
+					<h4>Co-Founder at <a href="https://noor-cf.web.app/about">NOOR</a> from 2019</h4>
+					<p>
+						Part of the founding team of NOOR, a Vietnamese startup focused on creating high-quality, healthy beverages.
+					</p>	
+					<p>Tags</p>
+					<ul>
+						<li>NOOR Coffee & Tea</li>
+						<li>NOOR Kombucha</li>
+						<li>NOOR Light</li>
+						<li>NOOR Studio</li>
+					</ul>
+				</section>
 				<section id="my-career-experience__freelancer-web-developer">
 					<h4>Freelancer Web Developer at <a href="#">My Home</a> from 2020</h4>
 					<p>
-						I've been working as a freelancer for the past 4 years, and have been improving my skills since.
+						I've been working as a freelancer for the past 5 years, and have been improving my skills since.
 					</p>	
+					<p>Tags</p>
+					<ul>
+						<li>React</li>
+						<li>Next.js</li>
+						<li>WordPress</li>
+						<li>Sanity CMS</li>
+						<li>SEO</li>
+					</ul>
 				</section>
 				<section id="my-career-experience__software-engineer-intern">
 					<h4>Software Engineer Intern at <a href="https://datahouse.com">DataHouse</a> from Jul 2021</h4>
 					<p>
 						I participated in the Summer Software Engineer internship at DataHouse Asia as a Frontend Web Developer.
 					</p>	
+					<p>Tags</p>
+					<ul>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>React</li>
+						<li>React Native</li>
+						<li>Angular</li>
+					</ul>
 				</section>
 				<section id="my-career-experience__software-engineer">
 					<h4>Software Engineer at <a href="https://datahouse.com">DataHouse</a> until now</h4>
 					<p>
 						Focused on Front-end architecture design, and development. Responsibilities include requirements analysis, UI implementation, code quality assurance, team management, and training/mentoring.
 					</p>	
+					<p>Tags</p>
+					<ul>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>React</li>
+						<li>Angular</li>
+						<li>Storybook</li>
+						<li>UI libraries</li>
+						<li>Lerna Monorepos</li>
+						<li>Micro-frontends</li>
+					</ul>
+				</section>
+				<section id="my-career-experience__full-stack-developer">
+					<h4>Full-Stack Developer at <a href="http://ots.one-line.com/">ONE Tech Stop Viet Nam</a> until now</h4>
+					<p>
+						Participate in the Design System team. Focused on building reusable React components and libraries for over 40 company's internal teams.
+					</p>
+					<p>Tags</p>
+					<ul>
+							<li>JavaScript</li>
+							<li>TypeScript</li>
+							<li>React</li>
+							<li>Next.js</li>
+							<li>Storybook</li>
+							<li>Design System</li>
+							<li>UI libraries</li>
+							<li>Turborepo</li>
+					</ul>
 				</section>
 			</section>
 
-			<section id="my-work">
+			<article id="my-work">
 				<h3>My Work</h3>
 				<section id="tourbook">
 					<h4>TourBook</h4>
@@ -189,9 +282,9 @@
 					<h4>Covid Tracker</h4>
 					<p>Tools and features: React, MUI, chart.js, leaflet, disease.sh</p>
 				</section>
-			</section>
+			</article>
 
-			<section id="contact">
+			<article id="contact">
 				<h3>Contact</h3>
 				<section>
 					<p>Email: tinphamvan123@gmail.com</p>
@@ -200,7 +293,7 @@
 					<p>Linkedin: <a href="https://www.linkedin.com/in/phamvantins/">phamvantins</a></p>
 					<p>Instagram: <a href="https://www.instagram.com/phamthitins">phamthitins</a></p>
 				</section>
-			</section>
+			</article>
 			<footer><p>Designed and Developed by <a href="https://tinspham.dev">Tin Pham</a></p></footer>
 		</div>
 
